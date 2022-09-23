@@ -14,7 +14,9 @@ class Car(models.Model):
 
     def save(self, *args, **kwargs):
         self.year = '2019'
+        print(self.id)
         super(Car, self).save(*args, **kwargs)
+        print(self.id)
 
 
 @receiver(pre_save, sender=Car)

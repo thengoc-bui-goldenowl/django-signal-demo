@@ -6,7 +6,7 @@ from django.db.models.signals import pre_save, post_save
 class SignalappConfig(AppConfig):
     name = 'signalapp'
 
-    def ready(self):
-        # Implicitly connect signal handlers decorated with @receiver.
-        from . import signals
-        # Explicitly connect a signal handler.
+    # def ready(self):
+    #     # Implicitly connect signal handlers decorated with @receiver.
+    #     from . import signals
+    #     # Explicitly connect a signal handler.
